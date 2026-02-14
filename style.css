@@ -387,6 +387,26 @@ footer {
 .job-card h3 {
   margin-bottom: 5px;
 }
+/* =========================
+   TRUSTED SECTION
+========================== */
+
+.trusted {
+  padding: 60px 20px;
+  text-align: center;
+  background: var(--light);
+}
+
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: var(--dark);
+}
+
 
 
 
