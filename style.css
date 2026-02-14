@@ -190,18 +190,19 @@ nav ul li a:hover {
 }
 
 .card {
-  background: #f9fafb;
-  padding: 35px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-  border-top: 4px solid transparent;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-  border-top: 4px solid #3B82F6;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
+
 
 /* RESPONSIVE GRID */
 @media (max-width: 992px) {
@@ -271,4 +272,5 @@ footer {
   padding: 40px 0;
   margin-top: 80px;
 }
+
 
