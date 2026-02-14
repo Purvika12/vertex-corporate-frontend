@@ -6,6 +6,30 @@
 <title>Job Seeker Login | Vertex Corporate</title>
 <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop real form submission
+
+    // Get input values
+    const email = document.querySelector('input[type="email"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+
+    // Basic validation
+    if(email === "" || password === "") {
+      alert("Please enter email and password");
+      return;
+    }
+
+    // Fake login success (for demo)
+    alert("Login Successful!");
+
+    // Redirect to dashboard page
+    window.location.href = "dashboard.html";
+  });
+</script>
+
 <body>
 
 <section class="auth-wrapper">
@@ -60,3 +84,4 @@
 
 </body>
 </html>
+
