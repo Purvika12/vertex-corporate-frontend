@@ -41,6 +41,54 @@
 
   </div>
 </section>
+  <section class="jobs-section">
+  <div class="container">
+
+    <div class="jobs-header">
+      <h1>Find Your Next Opportunity</h1>
+
+      <div class="job-filters">
+        <input type="text" id="searchInput" placeholder="Search by role...">
+
+        <select id="locationFilter">
+          <option value="">All Locations</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Remote">Remote</option>
+        </select>
+
+        <select id="typeFilter">
+          <option value="">All Types</option>
+          <option value="Full-Time">Full-Time</option>
+          <option value="Remote">Remote</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="jobsContainer">
+
+      <div class="job-card" data-role="React Developer" data-location="Bengaluru" data-type="Full-Time">
+        <div class="job-info">
+          <h3>React Developer</h3>
+          <p class="company">TechNova Pvt Ltd</p>
+          <p class="meta">Bengaluru • 2–4 Years • ₹6–10 LPA • Full-Time</p>
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+      <div class="job-card" data-role="Python Backend Engineer" data-location="Remote" data-type="Remote">
+        <div class="job-info">
+          <h3>Python Backend Engineer</h3>
+          <p class="company">CloudScale Systems</p>
+          <p class="meta">Remote • 3–5 Years • ₹8–12 LPA • Remote</p>
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 <footer>
   <p>© 2026 Vertex Corporate</p>
@@ -49,6 +97,7 @@
 <script src="jobs.js"></script>
 </body>
 </html>
+
 
 
 
