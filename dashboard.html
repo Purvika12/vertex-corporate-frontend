@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Vertex Corporate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+  const container = document.getElementById("applicationsList");
+  const appliedJobs = JSON.parse(localStorage.getItem("appliedJobs")) || [];
+
+  if (appliedJobs.length === 0) {
+    container.innerHTML = "<p>No applications yet.</p>";
+  } else {
+    appliedJobs.forEach(job => {
+      const div = document.createElement("div");
+      div.classList.add("job-card");
+      div.innerHTML = `<h3>${job}</h3><span class="status approved">Applied</span>`;
+      container.appendChild(div);
+    });
+  }
+</script>
+
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h2>Vertex</h2>
+    <ul>
+      <li>Overview</li>
+      <li>My Applications</li>
+      <li>Saved Jobs</li>
+      <li>Profile</li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-content">
+    <h1>Welcome, Purvika</h1>
+
+    <div class="dashboard-cards">
+      <div class="dash-card">
+        <h3>Applications</h3>
+        <p>5 Active</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Saved Jobs</h3>
+        <p>3 Jobs</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Profile Views</h3>
+        <p>12 Recruiters</p>
+      </div>
+    </div>
+
+    <h2>Your Applications</h2>
+<div id="applicationsList"></div>
+
+
+    <div class="application-item">
+      <span>Frontend Developer</span>
+      <span class="status pending">Pending</span>
+    </div>
+
+    <div class="application-item">
+      <span>Python Developer</span>
+      <span class="status approved">Shortlisted</span>
+    </div>
+
+  </main>
+
+</div>
+<button onclick="logout()">Logout</button>
+<script>
+  function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userEmail");
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
