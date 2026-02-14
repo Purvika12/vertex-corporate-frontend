@@ -552,6 +552,40 @@ footer {
   color: #1E3A8A;
   margin-bottom: 10px;
 }
+.jobs-section {
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.apply-btn {
+  background: #1E3A8A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #0A1F44;
+}
+
 
 
 
