@@ -523,6 +523,36 @@ footer {
   text-align: center;
   color: #1E3A8A;
 }
+.trust-section {
+  background: #f8f9fc;
+  padding: 80px 20px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.trust-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.trust-box:hover {
+  transform: translateY(-5px);
+}
+
+.trust-box h2 {
+  font-size: 32px;
+  color: #1E3A8A;
+  margin-bottom: 10px;
+}
+
 
 
 
