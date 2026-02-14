@@ -7,6 +7,15 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
+:root {
+  --primary: #0A1F44;
+  --accent: #1E88E5;
+  --light: #F5F7FA;
+  --dark: #111827;
+  --radius: 8px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
 
 body {
   line-height: 1.6;
@@ -262,3 +271,4 @@ footer {
   padding: 40px 0;
   margin-top: 80px;
 }
+
