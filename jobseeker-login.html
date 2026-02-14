@@ -59,32 +59,28 @@
 
 </section>
 
-<!-- ✅ SCRIPT MUST BE HERE -->
-<script>
-  const form = document.getElementById("loginForm");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-
-    if (email === "" || password === "") {
-      alert("Please enter email and password");
-      return;
-    }
-
-    // Realistic loading effect
-    const button = form.querySelector("button");
-    button.innerText = "Logging in...";
-    button.disabled = true;
-
-    setTimeout(() => {
-      window.location.href = "dashboard.html";
-    }, 1000);
-  });
-</script>
+<section class="trust-section">
+  <div class="container trust-grid">
+    <div class="trust-box">
+      <h2>5,200+</h2>
+      <p>Successful Placements</p>
+    </div>
+    <div class="trust-box">
+      <h2>350+</h2>
+      <p>Hiring Partners</p>
+    </div>
+    <div class="trust-box">
+      <h2>1,200+</h2>
+      <p>Active Job Listings</p>
+    </div>
+    <div class="trust-box">
+      <h2>98%</h2>
+      <p>Client Satisfaction</p>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
+
 
